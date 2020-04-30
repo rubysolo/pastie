@@ -1,0 +1,23 @@
+<h1>Paste</h1>
+
+<p>
+  <label>path</label>
+  <%= @paste.path %>
+</p>
+
+<p>
+  <label>timestamp</label>
+  <%= @paste.ts %>
+</p>
+
+<p>
+  <label>method</label>
+  <%= @paste.method %>
+</p>
+
+<p>
+  <label>body</label>
+  <pre>
+  <%= @paste.body %>
+  </pre>
+</p>

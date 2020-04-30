@@ -1,0 +1,7 @@
+<h2>Pastes</h2>
+
+<ul>
+<%= for paste <- @pastes do %>
+  <li><%= link "#{paste.method} #{paste.path}", to: Routes.paste_path(@conn, :show, paste.id) %></li>
+<% end %>
+</ul>
